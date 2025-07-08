@@ -12,9 +12,11 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
   }
   return result;
 }
+// Arrow function
+const getInitialsArrow = arr => arr.map(name => name[0]);
 
 // Invoca la funzione qui e stampa il risultato in console
 console.log(getInitials(names));
-
+console.log(getInitialsArrow(names));
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
