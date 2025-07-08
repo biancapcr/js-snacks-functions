@@ -4,7 +4,7 @@ const word = 'javascript';
 
 
 // Dichiara la funzione qui.
-// 1) Funzione tradizionale
+ // 1) Funzione tradizionale
 function countVowels(str){
   let count = 0;
   const vowels = 'aeiouAEIOU';
@@ -15,9 +15,14 @@ function countVowels(str){
 }
   return count;
 }
+ //Arrow function
+const countVowelsArrow = str => str
+  .split('')
+  .filter(char => 'aeiou'.includes(char.toLowerCase()))
+  .length;
 
 // Invoca la funzione qui e stampa il risultato in console
 console.log(countVowels(word));
-
+console.log(countVowelsArrow(word));
 
 //Risultato atteso se si passa 'javascript': 3 (a, a, i)
